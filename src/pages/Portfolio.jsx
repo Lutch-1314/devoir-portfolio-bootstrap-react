@@ -47,7 +47,7 @@ const Portfolio = () => {
                         <aside>PHP - SYMFONY</aside>
                     </article>
                     <article>
-                        <img src="./images/portfolio/screens.jpg" alt="photo d'ordinateurs, un clavier et une tablette sur un bureau" />
+                        <img src="./images/portfolio/screens.jpg" alt="des ordinateurs, un clavier et une tablette sur un bureau" />
                         <h2>Maquette d'un site web</h2>
                         <p>Création du prototype d'un site</p>
                         <button>Voir le site</button>
