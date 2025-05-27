@@ -2,7 +2,7 @@
 const Home = () => {
     return (
         <div>
-            <header className="">
+            <header className="htest">
             <h1>Bonjour, je suis John Doe</h1>
             <h2>Développeur Web full stack</h2>
             <button>En savoir plus</button>
