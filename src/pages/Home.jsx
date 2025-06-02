@@ -11,7 +11,7 @@ const Home = () => {
             <main>
             <section>
                 <h3>A propos</h3>
-                <image></image>
+                <img></img>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan. Fusce quis imperdiet velit, nec consequat nisi. Pellentesque varius euismod mi, at eleifend turpis aliquam in. Aenean vitae consectetur elit. Ut lacus tortor, feugiat eget commodo eu, semper nec est. Nulla arcu diam, venenatis nec consequat a, aliquam at ex. Vivamus molestie lectus tellus, ut accumsan libero varius vitae.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan. Fusce quis imperdiet velit, nec consequat nisi. Pellentesque varius euismod mi, at eleifend turpis aliquam in. Aenean vitae consectetur elit. Ut lacus tortor, feugiat eget commodo eu, semper nec est. Nulla arcu diam, venenatis nec consequat a, aliquam at ex. Vivamus molestie lectus tellus, ut accumsan libero varius vitae.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan. Fusce quis imperdiet velit, nec consequat nisi. Pellentesque varius euismod mi, at eleifend turpis aliquam in. Aenean vitae consectetur elit. Ut lacus tortor, feugiat eget commodo eu, semper nec est. Nulla arcu diam, venenatis nec consequat a, aliquam at ex. Vivamus molestie lectus tellus, ut accumsan libero varius vitae.</p>

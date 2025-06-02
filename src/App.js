@@ -7,18 +7,36 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Legalnotice from './pages/Legalnotice';
 
-
-
 class App extends React.Component {
   render() {
     return(
       <div className="">
-        <nav>
-          <Link to="/">Accueil</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/legalnotice">Mentions légales</Link>
+        <nav className="navbar navbar-dark navbar-expand-md bg-dark fixed-top text-uppercase px-4">
+          <div className="container-fluid">
+            <span className="navbar-brand text-uppercase">John Doe</span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/">Accueil</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/services">Services</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/portfolio">Portfolio</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link active" aria-current="page" to="/legalnotice">Mentions légales</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
 
         <Routes>
@@ -40,13 +58,13 @@ class App extends React.Component {
                 <span>johndoe@gmail.com</span>
               </address>
               <a href="https://github.com/Johndoedoestai/john" target="blank">
-              <i class="bi bi-github"></i>
+              <i className="bi bi-github"></i>
               </a>
               <a href="https://x.com/JohnDoe93668706" target="blank">
-              <i class="bi bi-twitter"></i>
+              <i className="bi bi-twitter"></i>
               </a>
               <a href="https://www.linkedin.com/in/john-doe-1236ab364/" target="blank">
-              <i class="bi bi-linkedin"></i>
+              <i className="bi bi-linkedin"></i>
               </a>
             </li>
             <li>
