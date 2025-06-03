@@ -1,43 +1,19 @@
 import React from "react";
 import {Routes,Route,Link} from "react-router-dom";
+
 import './App.css';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Legalnotice from './pages/Legalnotice';
+import Navbar from './other components/Navbar';
 
 class App extends React.Component {
   render() {
     return(
       <div className="">
-        <nav className="navbar navbar-dark navbar-expand-md bg-dark fixed-top text-uppercase px-4">
-          <div className="container-fluid">
-            <span className="navbar-brand text-uppercase">John Doe</span>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">Accueil</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/services">Services</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/portfolio">Portfolio</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/contact">Contact</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/legalnotice">Mentions légales</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
 
         <Routes>
           <Route path="/" element={<Home/>}></Route>
