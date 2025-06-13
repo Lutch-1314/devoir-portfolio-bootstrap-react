@@ -12,7 +12,7 @@ import Navbar from './other components/Navbar';
 class App extends React.Component {
   render() {
     return(
-      <div className="">
+      <div className="all">
         <Navbar />
 
         <Routes>
