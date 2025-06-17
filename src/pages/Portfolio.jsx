@@ -1,58 +1,73 @@
+import Card from '../other components/Card'
 
+const articlesData = [
+  {
+    imageSrc: "./images/portfolio/fresh-food.jpg",
+    imageAlt: "une cagette avec des légumes",
+    title: "Fresh Food",
+    text: "Site de vente de produits frais en ligne",
+    buttonText: "Voir le site",
+    footerText: "Site réalisé avec PHP et MySQL"
+  },
+  {
+    imageSrc: "./images/portfolio/restaurant-japonais.jpg",
+    imageAlt: "des sushis et des makis",
+    title: "Restaurant Akira",
+    text: "Site de restaurant japonais",
+    buttonText: "Voir le site",
+    footerText: "Site réalisé avec WordPress"
+  },
+  {
+    imageSrc: "./images/portfolio/espace-bien-etre.jpg",
+    imageAlt: "une tête de bouddha, une fleur de lotus et une pile de galets avec un coucher de soleil en fond",
+    title: "Espace bien-être",
+    text: "Site de vente de produits de bien-être",
+    buttonText: "Voir le site",
+    footerText: "Site réalisé avec LARAVEL"
+  },
+  {
+    imageSrc: "./images/portfolio/seo.jpg",
+    imageAlt: "des mots en rapport avec le seo sur fond bleu",
+    title: "SEO",
+    text: "Amélioration du référencement d'un site e-commerce",
+    buttonText: "Voir le site",
+    footerText: "Utilisation des outils SEO"
+  },
+  {
+    imageSrc: "./images/portfolio/coder.jpg",
+    imageAlt: "du code informatique sur un écran pc",
+    title: "Création d'une API",
+    text: "Création d'une API RESTFULL publique",
+    buttonText: "Voir le site",
+    footerText: "PHP - SYMFONY"
+  },
+  {
+    imageSrc: "./images/portfolio/screens.jpg",
+    imageAlt: "des ordinateurs, un clavier et une tablette sur un bureau",
+    title: "Maquette d'un site web",
+    text: "Création du prototype d'un site",
+    buttonText: "Voir le site",
+    footerText: "Réalisé avec FIGMA"
+  }
+];
 
 const Portfolio = () => {
     return (
-        <div>
-            <header>
-                <img src="./images/banner.jpg" alt="une bannière bleue" />
+        <div className="container-fluid p-0">
+            <header className="w-100 text-center">
+                <img src="./images/banner.jpg" className="img-fluid w-100" alt="une bannière bleue" />
                 <h1>Portfolio</h1>
+                <div className="mx-auto my-3 bg-primary" style={{ width: '30%', height: '3px', marginTop: '5px' }}></div>
                 <p>Voici quelques-unes de mes réalisations.</p>
             </header>
             <hr />
-            <main>
-                <section>
-                    <article>
-                        <img src="./images/portfolio/fresh-food.jpg" alt="une cagette avec des légumes" />
-                        <h2>Fresh Food</h2>
-                        <p>Site de vente de produits frais en ligne</p>
-                        <button>Voir le site</button>
-                        <aside>Site réalisé avec PHP et MySQL</aside>
-                    </article>
-                    <article>
-                        <img src="./images/portfolio/restaurant-japonais.jpg" alt="des sushis et des makis" />
-                        <h2>Restaurant Akira</h2>
-                        <p>Site de restaurant japonais</p>
-                        <button>Voir le site</button>
-                        <aside>Site réalisé avec WordPress</aside>
-                    </article>
-                    <article>
-                        <img src="./images/portfolio/espace-bien-etre.jpg" alt="une tête de bouddha, une fleur de lotus et une pile de galets avec un coucher de soleil en fond" />
-                        <h2>Espace bien-être</h2>
-                        <p>Site de vente de produits de bien-être</p>
-                        <button>Voir le site</button>
-                        <aside>Site réalisé avec LARAVEL</aside>
-                    </article>
-                    <article>
-                        <img src="./images/portfolio/seo.jpg" alt="des mots en rapport avec le seo sur fond bleu" />
-                        <h2>SEO</h2>
-                        <p>Amélioration du référencement d'un site e-commerce</p>
-                        <button>Voir le site</button>
-                        <aside>Utilisation des outils SEO</aside>
-                    </article>
-                    <article>
-                        <img src="./images/portfolio/coder.jpg" alt="du code informatique sur un écran pc" />
-                        <h2>Création d'une API</h2>
-                        <p>Création d'une API RESTFULL publique</p>
-                        <button>Voir le site</button>
-                        <aside>PHP - SYMFONY</aside>
-                    </article>
-                    <article>
-                        <img src="./images/portfolio/screens.jpg" alt="des ordinateurs, un clavier et une tablette sur un bureau" />
-                        <h2>Maquette d'un site web</h2>
-                        <p>Création du prototype d'un site</p>
-                        <button>Voir le site</button>
-                        <aside>Réalisé avec FIGMA</aside>
-                    </article>
+            <main className="container">
+                <section className="row row-cols-1 row-cols-md-3 g-4 m-0">
+                    {articlesData.map((article, index) => (
+                        <article className="col" key={index}>
+                            <Card {...article} />
+                        </article>
+                    ))}
                 </section>
             </main>
         </div>

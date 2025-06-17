@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div>
           <nav className="navbar navbar-dark navbar-expand-md bg-dark text-uppercase px-4">
-            <div className="container-fluid">
+            <div className="container-fluid w-100">
               <span className="navbar-brand mb-0 h1">John Doe</span>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
