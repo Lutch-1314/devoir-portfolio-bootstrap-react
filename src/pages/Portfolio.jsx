@@ -56,13 +56,12 @@ const Portfolio = () => {
         <div className="container-fluid p-0">
             <header className="w-100 text-center">
                 <img src="./images/banner.jpg" className="img-fluid w-100" alt="une bannière bleue" />
-                <h1>Portfolio</h1>
-                <div className="mx-auto my-3 bg-primary" style={{ width: '30%', height: '3px', marginTop: '5px' }}></div>
+                <h1 className="mt-5">Portfolio</h1>
                 <p>Voici quelques-unes de mes réalisations.</p>
+                <div className="mx-auto my-3 bg-primary" style={{ width: '30%', height: '3px', marginTop: '5px' }}></div>
             </header>
-            <hr />
             <main className="container">
-                <section className="row row-cols-1 row-cols-md-3 g-4 m-0">
+                <section className="row row-cols-1 row-cols-md-3 g-4 my-5">
                     {articlesData.map((article, index) => (
                         <article className="col" key={index}>
                             <Card {...article} />
