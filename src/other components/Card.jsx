@@ -1,3 +1,5 @@
+import './css/Card.css';
+
 const Card = ({ imageSrc, imageAlt, title, text, buttonText, footerText }) => {
   return (
     <article className="card h-100 text-center">

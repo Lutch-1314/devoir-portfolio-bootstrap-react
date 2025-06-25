@@ -1,0 +1,18 @@
+.card {
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    background-color: #efefef;
+    box-shadow: 8px 8px 8px grey;
+}
+
+.card .btn-primary {
+  transition: background-color 0.5s ease;
+}
+
+/** dans le brief il y a 2 indications contradictoires (pages 3 et 5) j'ai choisi le fait d'éclaircir le bouton au survol**/
+.card .btn-primary:hover {
+    background-color: rgb(37, 146, 255);
+    border-color: rgb(37, 146, 255);
+}
