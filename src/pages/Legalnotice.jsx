@@ -1,18 +1,19 @@
 const Legalnotice = () => {
     return (
-        <div>
-            <header>
-                <h1>Mentions légales</h1>
+        <div className="container-fluid">
+            <header className="text-center mb-5">
+                <h1 className="mt-5">Mentions légales</h1>
+                <div className="mx-auto my-3 bg-primary" style={{ width: '30%', height: '4px', marginTop: '5px' }}></div>
             </header>
-            <main>
+            <main className="container mb-5">
                 <section className="accordion" id="accordionLegalNotice">
                     <article className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h2 className="accordion-header" id="accordion-header-one">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                               Éditeur du site
                             </button>
                         </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionLegalNotice">
+                        <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice" aria-labelledby="accordion-header-one">
                             <address className="accordion-body d-flex flex-column">
                                 <strong>John Doe</strong>
                                 <span>
@@ -35,12 +36,12 @@ const Legalnotice = () => {
                         </div>
                     </article>
                     <article className="accordion-item">
-                        <h2 className="accordion-header">
+                        <h2 className="accordion-header" id="accordion-header-two">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               Hébergeur
                             </button>
                         </h2>
-                        <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice">
+                        <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice" aria-labelledby="accordion-header-two">
                             <address className="accordion-body d-flex flex-column">
                                 <strong>alwaysdata</strong>
                                 <span>
@@ -54,12 +55,12 @@ const Legalnotice = () => {
                         </div>
                     </article>
                     <article className="accordion-item">
-                        <h2 className="accordion-header">
+                        <h2 className="accordion-header" id="accordion-header-three">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Crédits
                             </button>
                         </h2>
-                        <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice" aria-labelledby="accordion-header-three">
                             <div className="accordion-body">
                                 <strong>Crédits</strong>
                                 <p>Ce site a été réalisé par John Doe, étudiant au 
