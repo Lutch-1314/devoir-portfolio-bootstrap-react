@@ -43,6 +43,7 @@ const Legalnotice = () => {
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice" aria-labelledby="accordion-header-two">
                             <address className="accordion-body d-flex flex-column">
+                                {/* L'apparence est différente de la maquette mais j'ai préféré garder la cohérence avec le 1er accordéon */}
                                 <strong>alwaysdata</strong>
                                 <span>
                                     91 Rue du Faubourg Saint-Honoré, 75008 Paris
@@ -62,6 +63,7 @@ const Legalnotice = () => {
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionLegalNotice" aria-labelledby="accordion-header-three">
                             <div className="accordion-body">
+                                {/* L'apparence est différente de la maquette mais j'ai préféré garder la cohérence avec le 1er accordéon */}
                                 <strong>Crédits</strong>
                                 <p>Ce site a été réalisé par John Doe, étudiant au 
                                     <a href="https://www.centre-europeen-formation.fr/" target="blank"> Centre Européen de Formation.</a>
