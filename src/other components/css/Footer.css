@@ -1,0 +1,8 @@
+.social-link .bi {
+  color: #6c757d;
+}
+
+.social-link:hover .bi {
+  color: gainsboro;
+  transition: color 0.3s ease;
+}
