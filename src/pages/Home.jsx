@@ -1,12 +1,56 @@
+import {useState, useEffect} from "react";
 import './Home.css';
 
 const Home = () => {
+
+    const [user,setUser] = useState();
+
+    const getUser = async () => {
+        const res = await fetch("https://api.github.com/users/github-john-doe");
+        const json = await res.json();
+        setUser(json);
+    }
+       useEffect(() => {
+           getUser(); 
+        },[])
+
     return (
         <div className="">
             <header className="header text-center text-light d-flex flex-column justify-content-center align-items-center">
                 <h1>Bonjour, je suis John Doe</h1>
                 <h2>Développeur web full stack</h2>
-                <button type="button" className='btn btn-danger px-4'>En savoir plus</button>
+                <button type="button" className="btn btn-danger px-4" data-bs-toggle="modal" data-bs-target="#githubProfile">En savoir plus</button>
+               
+
+
+
+<div className="modal fade" id="githubProfile" tabIndex="-1" aria-labelledby="githubProfileLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h1 className="modal-title fs-5" id="githubProfileLabel">Modal title</h1>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        {user && (
+            <>
+            <div>{user.name}</div>
+            <div>{user.location}</div>
+            <div>{user.bio}</div>
+            <div>{user.public_repos}</div>
+            <div>{user.followers}</div>
+            <div>{user.following}</div>
+            </>
+        )}
+        
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
             </header>
 
             <main className="container ">
