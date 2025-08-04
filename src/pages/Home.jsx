@@ -1,14 +1,28 @@
+import {useState, useEffect} from "react";
+import GitHubModal from "../other components/GitHubModal.jsx";
 import './Home.css';
 
 const Home = () => {
+    const [user,setUser] = useState();
+
+    const getUser = async () => {
+        const res = await fetch("https://api.github.com/users/github-john-doe");
+        const json = await res.json();
+        setUser(json);
+    }
+
+       useEffect(() => {
+           getUser(); 
+        },[])
+
     return (
         <div className="">
             <header className="header text-center text-light d-flex flex-column justify-content-center align-items-center">
                 <h1>Bonjour, je suis John Doe</h1>
                 <h2>Développeur web full stack</h2>
-                <button type="button" className='btn btn-danger px-4'>En savoir plus</button>
+                <button type="button" className="btn btn-danger px-4" data-bs-toggle="modal" data-bs-target="#githubProfile">En savoir plus</button>
+                <GitHubModal user={user} />
             </header>
-
             <main className="container ">
                 <section className="row border shadow p-3 mb-5 mt-5 mx-1 bg-body-tertiary rounded">
                     <article className="col-md-6">
