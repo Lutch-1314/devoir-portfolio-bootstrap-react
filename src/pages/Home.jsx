@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import GitHubModal from "../other components/GitHubModal.jsx";
-import './Home.css';
+import '../assets/css-pages/Home.css';
 
 const Home = () => {
     const [user,setUser] = useState();
@@ -20,7 +20,7 @@ const Home = () => {
             <header className="header text-center text-light d-flex flex-column justify-content-center align-items-center">
                 <h1>Bonjour, je suis John Doe</h1>
                 <h2>Développeur web full stack</h2>
-                <button type="button" className="btn btn-danger px-4" data-bs-toggle="modal" data-bs-target="#githubProfile">En savoir plus</button>
+                <button type="button" className="btn btn-danger mt-3 px-4" data-bs-toggle="modal" data-bs-target="#githubProfile">En savoir plus</button>
                 <GitHubModal user={user} />
             </header>
             <main className="container ">
@@ -28,7 +28,7 @@ const Home = () => {
                     <article className="col-md-6">
                         <h3>A propos</h3>
                         <div className="mx-auto my-3 bg-primary" style={{ width: '100%', height: '3px', marginTop: '5px' }}></div>
-                        <img src="/images/john-doe-about.jpg" alt="photo de John Doe" className="img-fluid py-4"></img>
+                        <img src="/images/john-doe-about.jpg" alt="John Doe" className="img-fluid py-4"></img>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ante et neque venenatis malesuada. Sed viverra aliquam accumsan.</p>
