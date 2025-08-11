@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /legalnotice
+
+Sitemap: https://www.johndoe.fr/sitemap.xml
