@@ -1,4 +1,17 @@
+import { useEffect } from 'react';
+
 const Legalnotice = () => {
+  useEffect(() => {
+    const metaTag = document.createElement('meta');
+    metaTag.name = 'robots';
+    metaTag.content = 'noindex, nofollow';
+    document.head.appendChild(metaTag);
+
+    return () => {
+      document.head.removeChild(metaTag);
+    };
+  }, []);
+    
     return (
         <div className="container-fluid">
             <header className="text-center mb-5">
