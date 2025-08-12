@@ -1,0 +1,16 @@
+.header {
+  background-image: url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+}
+
+.header h2 {
+  font-size: 3.2rem;
+}

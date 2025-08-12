@@ -30,19 +30,19 @@ const Legalnotice = () => {
                             <address className="accordion-body d-flex flex-column">
                                 <strong>John Doe</strong>
                                 <span>
-                                    <i className="bi bi-map"> </i>
+                                    <i className="bi bi-map me-1"></i>
                                     40 rue Laure Diebold
                                 </span>
                                 <span>
-                                    <i className="bi bi-geo-alt"> </i>
+                                    <i className="bi bi-geo-alt me-1"></i>
                                     69009 Lyon, France
                                 </span>
                                 <span>
-                                    <i className="bi bi-phone"> </i>
+                                    <i className="bi bi-phone me-1"></i>
                                     10 20 30 40 50
                                 </span>
                                 <span>
-                                    <i className="bi bi-envelope-at"> </i>
+                                    <i className="bi bi-envelope-at me-1"></i>
                                     johndoe@gmail.com
                                 </span>
                             </address>
@@ -62,8 +62,8 @@ const Legalnotice = () => {
                                     91 Rue du Faubourg Saint-Honoré, 75008 Paris
                                 </span>
                                 <span>
-                                    <i class="bi bi-globe"> </i>
-                                    <a href="https://www.alwaysdata.com/fr/" target="blank">www.alwaysdata.com</a>
+                                    <i class="bi bi-globe me-1"></i>
+                                    <a href="https://www.alwaysdata.com/fr/" target="_blank" rel="noopener noreferrer">www.alwaysdata.com</a>
                                 </span>
                             </address>
                         </div>
@@ -78,14 +78,14 @@ const Legalnotice = () => {
                             <div className="accordion-body">
                                 {/* L'apparence est différente de la maquette mais j'ai préféré garder la cohérence avec le 1er accordéon */}
                                 <strong>Crédits</strong>
-                                <p>Ce site a été réalisé par John Doe, étudiant au 
-                                    <a href="https://www.centre-europeen-formation.fr/" target="blank"> Centre Européen de Formation.</a>
+                                <p>Ce site a été réalisé par John Doe, étudiant au
+                                    <a href="https://www.centre-europeen-formation.fr/" className="ms-1" target="_blank" rel="noopener noreferrer">Centre Européen de Formation.</a>
                                 </p>
                                 <p>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site
-                                    <a href="https://www.flaticon.com/fr/" target="blank"> Pixabay.</a>
+                                    <a href="https://www.flaticon.com/fr/" className="ms-1" target="_blank" rel="noopener noreferrer">Pixabay.</a>
                                 </p>
                                 <p>Le favicon de ce site a été fourni par 
-                                    <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" target="blank"> John doe Icons erstellt von Freepik - Flaticon.</a>
+                                    <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" className="ms-1" target="_blank" rel="noopener noreferrer">John doe Icons erstellt von Freepik - Flaticon.</a>
                                 </p>
                             </div>
                         </div>

@@ -4,7 +4,7 @@ import './css/Footer.css';
 const Footer = () => {
     return (
       <footer className="text-light bg-dark py-4">
-        <div className="container">
+        <div className="container mx-4">
           <div className="row">
             <div className="col-lg-4 col-md-6 mb-4">
               <h4>John Doe</h4>
@@ -14,13 +14,13 @@ const Footer = () => {
                 <span>10 20 30 40 50</span>
                 <span>johndoe@gmail.com</span>
               </address>
-              <a href="https://github.com/Johndoedoestai/john" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://github.com/Johndoedoestai/john" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-github me-2 fs-4"></i>
               </a>
-              <a href="https://x.com/JohnDoe93668706" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://x.com/JohnDoe93668706" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-twitter me-2 fs-4"></i>
               </a>
-              <a href="https://www.linkedin.com/in/john-doe-1236ab364/" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://www.linkedin.com/in/john-doe-1236ab364/" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-linkedin fs-4"></i>
               </a>
             </div>
@@ -38,12 +38,12 @@ const Footer = () => {
               <h4>Mes dernières réalisations</h4>
               <ul className="list-unstyled">
                 {/*Je n'ai pas mis de Link pour les liens suivants car ce sont des liens externes normalement*/}
-                <li><a href="/portfolio" className="link-light text-decoration-none">Fresh Food</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Restaurant Akira</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Espace bien-être</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">SEO</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Création d'une API</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Maquette d'un site</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Fresh Food</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Restaurant Akira</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Espace bien-être</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">SEO</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Création d'une API</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Maquette d'un site</a></li>
               </ul>
             </div>
           </div>
