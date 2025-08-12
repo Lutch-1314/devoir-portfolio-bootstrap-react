@@ -38,12 +38,12 @@ const Footer = () => {
               <h4>Mes dernières réalisations</h4>
               <ul className="list-unstyled">
                 {/*Je n'ai pas mis de Link pour les liens suivants car ce sont des liens externes normalement*/}
-                <li><a href="/portfolio" className="link-light text-decoration-none">Fresh Food</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Restaurant Akira</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Espace bien-être</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">SEO</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Création d'une API</a></li>
-                <li><a href="/portfolio" className="link-light text-decoration-none">Maquette d'un site</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Fresh Food</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Restaurant Akira</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Espace bien-être</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">SEO</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Création d'une API</a></li>
+                <li><a href="/portfolio" className="link-light text-decoration-none" target="_blank">Maquette d'un site</a></li>
               </ul>
             </div>
           </div>

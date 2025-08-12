@@ -63,7 +63,7 @@ const Legalnotice = () => {
                                 </span>
                                 <span>
                                     <i class="bi bi-globe me-1"></i>
-                                    <a href="https://www.alwaysdata.com/fr/" target="blank">www.alwaysdata.com</a>
+                                    <a href="https://www.alwaysdata.com/fr/" target="_blank" rel="noopener noreferrer">www.alwaysdata.com</a>
                                 </span>
                             </address>
                         </div>
@@ -79,13 +79,13 @@ const Legalnotice = () => {
                                 {/* L'apparence est différente de la maquette mais j'ai préféré garder la cohérence avec le 1er accordéon */}
                                 <strong>Crédits</strong>
                                 <p>Ce site a été réalisé par John Doe, étudiant au
-                                    <a href="https://www.centre-europeen-formation.fr/" className="ms-1" target="blank">Centre Européen de Formation.</a>
+                                    <a href="https://www.centre-europeen-formation.fr/" className="ms-1" target="_blank" rel="noopener noreferrer">Centre Européen de Formation.</a>
                                 </p>
                                 <p>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site
-                                    <a href="https://www.flaticon.com/fr/" className="ms-1" target="blank">Pixabay.</a>
+                                    <a href="https://www.flaticon.com/fr/" className="ms-1" target="_blank" rel="noopener noreferrer">Pixabay.</a>
                                 </p>
                                 <p>Le favicon de ce site a été fourni par 
-                                    <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" className="ms-1" target="blank">John doe Icons erstellt von Freepik - Flaticon.</a>
+                                    <a href="https://www.flaticon.com/de/kostenlose-icons/john-doe" className="ms-1" target="_blank" rel="noopener noreferrer">John doe Icons erstellt von Freepik - Flaticon.</a>
                                 </p>
                             </div>
                         </div>
