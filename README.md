@@ -1,3 +1,9 @@
+Bonjour !!! 
+Cette petite app pour me présenter. Je suis John Doe, développeur web full stack, et voici mes réalisations et mes coordonnées.
+
+Hi !!!
+This little app is to introduce myself. I'm John Doe, a full-stack web developer, and here are my accomplishments and contact information.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

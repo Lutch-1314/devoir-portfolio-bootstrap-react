@@ -7,18 +7,10 @@
   height: 100vh;
 }
 
-header h1 {
+.header h1 {
   font-size: 4.5rem;
 }
 
-header h2 {
+.header h2 {
   font-size: 3.2rem;
-}
-
-header h1, header h2 {
-  font-weight: 600;
-}
-
-article h3 {
-  font-weight: 600;
 }

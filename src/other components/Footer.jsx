@@ -14,13 +14,13 @@ const Footer = () => {
                 <span>10 20 30 40 50</span>
                 <span>johndoe@gmail.com</span>
               </address>
-              <a href="https://github.com/Johndoedoestai/john" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://github.com/Johndoedoestai/john" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-github me-2 fs-4"></i>
               </a>
-              <a href="https://x.com/JohnDoe93668706" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://x.com/JohnDoe93668706" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-twitter me-2 fs-4"></i>
               </a>
-              <a href="https://www.linkedin.com/in/john-doe-1236ab364/" className="social-link" target="_blank" rel="nofollow">
+              <a href="https://www.linkedin.com/in/john-doe-1236ab364/" className="social-link" target="_blank" rel="noopener noreferrer nofollow">
                 <i className="bi bi-linkedin fs-4"></i>
               </a>
             </div>
